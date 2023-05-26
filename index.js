@@ -2,7 +2,8 @@ async function getData() {
   const url = "https://testbackend-cql1.onrender.com/anotherpage";
   const response = await fetch(url);
   const jsonResponse = await response.text();
-  console.log(jsonResponse);
+  const time = new Date();
+  console.log(jsonResponse + " " + time.toLocaleTimeString("en-US"));
 }
 
 function sendRequestInterval() {
