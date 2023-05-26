@@ -8,7 +8,7 @@ async function getData() {
 
 function sendRequestInterval() {
   getData();
-  setInterval(getData, 10 * 60 * 1000);
+  setInterval(getData, 5 * 60 * 1000);
 }
 
 sendRequestInterval();
